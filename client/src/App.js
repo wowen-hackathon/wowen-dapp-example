@@ -22,10 +22,10 @@ function App() {
       let chainId = await ethereum.request({ method: 'eth_chainId'})
       console.log('Connected to chain:' + chainId)
 
-      const rinkebyChainId = '0x4'
+      const wowenChainId = '0x3d5'
 
-      if (chainId !== rinkebyChainId) {
-        alert('You are not connected to the Rinkeby Testnet!')
+      if (chainId !== wowenChainId) {
+        alert('You are not connected to the Wowen net!')
         return
       }
 
@@ -44,9 +44,9 @@ function App() {
     let chainId = await ethereum.request({ method: 'eth_chainId' })
     console.log('Connected to chain:' + chainId)
 
-    const rinkebyChainId = '0x4'
+    const wowenChainId = '0x3d5'
 
-    if (chainId !== rinkebyChainId) {
+    if (chainId !== wowenChainId) {
       setCorrectNetwork(false)
     } else {
       setCorrectNetwork(true)
@@ -78,7 +78,7 @@ function App() {
       ) : (
       <div className='flex flex-col justify-center items-center mb-20 font-bold text-2xl gap-y-3'>
       <div>----------------------------------------</div>
-      <div>Please connect to the Rinkeby Testnet</div>
+      <div>Please connect to the Wowen net</div>
       <div>and reload the page</div>
       <div>----------------------------------------</div>
       </div>
